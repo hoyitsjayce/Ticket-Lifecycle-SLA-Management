@@ -9,18 +9,18 @@ priority triage, SLA enforcement, and tiered escalation, and resolve a subset
 of tickets against real Active Directory infrastructure.
 
 ## Table of Contents
-1. Project Overview
-2. Environment
-3. How Triage & SLA Enforcement Works
-4. What Was Built
-5. Phase 1 — Priority Matrix & SLA Policy
-6. Phase 2 — Ticket Queue
-7. Phase 3 — Triage
-8. Phase 4 — Resolution Against Live Infrastructure
-9. Resolution Notes
-10. Key Concepts Demonstrated
-11. Tools & Technologies
-12. Project Status
+1. [Project Overview](#project-overview)
+2. [How Triage & SLA Enforcement Works](#how-triage--sla-enforcement-works)
+3. [What Was Built](#what-was-built)
+4. [Phase 1 — Priority Matrix & SLA Policy](#phase-1--priority-matrix--sla-policy)
+5. [Phase 2 — Ticket Queue](#phase-2--ticket-queue)
+6. [Phase 3 — Triage](#phase-3--triage)
+7. [Phase 4 — Resolution Against Live Infrastructure](#phase-4--resolution-against-live-infrastructure)
+8. [SLA Report](#sla-report)
+9. [Resolution Notes](#resolution-notes)
+10. [Key Concepts Demonstrated](#key-concepts-demonstrated)
+11. [Tools & Technologies](#tools--technologies)
+12. [Project Status](#project-status)
 
 ## Project Overview
 
@@ -191,7 +191,7 @@ Restarted the service via `services.msc`, confirmed print functionality restored
 **SLA Breach Rate:** 3 of 3 tracked tickets breached (100%)
 
 **Root cause:** Project work was paused for several days mid-cycle after 
-initial ticket creation. All three tickets were correctly triaged and prioritized before the delay occurred.
+initial ticket creation. All three tickets were correctly triaged and prioritized before the delay occurred. The breach reflects elapsed project time, not misdiagnosis.
 
 ## Resolution Notes
 
