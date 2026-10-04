@@ -71,7 +71,7 @@ leaving triage decisions to individual technician judgment.
 Before logging any tickets, a priority matrix and SLA policy were defined to 
 remove guesswork from triage.
 
-<img width="452" height="168" alt="output-onlinepngtools" src="https://github.com/user-attachments/assets/0d4b0d09-1492-4b63-b9dc-2a79d228cd26" />
+<img width="452" height="168" alt="output-onlinepngtools" src="https://github.com/user-attachments/assets/0f57ce48-fc70-48a3-901e-fa209f436044" />
 
 **SLA targets configured:**
 
@@ -82,13 +82,13 @@ remove guesswork from triage.
 | Medium | 8 hrs | 24 hrs | Business Hours |
 | Low | 24 hrs | 72 hrs | Business Hours |
 
-<img width="1918" height="842" alt="Screenshot 2026-08-29 190013" src="https://github.com/user-attachments/assets/583be9c2-2117-41ac-a270-3b5232ad3c03" />
+<img width="1918" height="842" alt="Screenshot 2026-08-29 190013" src="https://github.com/user-attachments/assets/21e479a1-f2c4-4d8d-b94f-2a37b619c9f2" />
 
 **Escalation rules:** response escalation fires 30 minutes before the SLA 
 deadline; resolution escalation fires 1 hour before deadline — both route to 
 Tier 2 Support.
 
-<img width="1919" height="849" alt="Screenshot 2026-08-29 193549" src="https://github.com/user-attachments/assets/6af28377-e47a-4ac1-98b9-dc7c94a55d48" />
+<img width="1919" height="849" alt="Screenshot 2026-08-29 193549" src="https://github.com/user-attachments/assets/cd87f76e-8b1c-4461-949a-42bf9a79f54a" />
 
 
 ## Phase 2 — Ticket Queue
@@ -96,7 +96,7 @@ Tier 2 Support.
 9 tickets were logged, each assigned priority via the matrix above rather than 
 by guesswork:
 
-<img width="1917" height="848" alt="Screenshot 2026-08-29 202954" src="https://github.com/user-attachments/assets/f1c50fad-89b0-47fa-a6d4-8175c7db73a4" />
+<img width="1917" height="848" alt="Screenshot 2026-08-29 202954" src="https://github.com/user-attachments/assets/c8b463e0-6550-4df4-b865-dcae27733d0a" />
 
 
 | Priority | Count | Examples |
@@ -119,15 +119,15 @@ documented at the time of the decision:
 | New hire laptop | Medium | Tier 1 | Standard onboarding task |
 | VPN client failure | High | Tier 1 (time-boxed) | Attempting standard troubleshooting first; escalate within the hour if unresolved |
 
-<img width="1917" height="882" alt="Triage 2" src="https://github.com/user-attachments/assets/2f70da32-35ed-46dd-944f-d0148a55ea7c" />
+<img width="1917" height="882" alt="Triage 2" src="https://github.com/user-attachments/assets/04e4d886-bf2d-4973-abfc-719676f865dd" />
 
-<img width="1919" height="883" alt="Triage 1" src="https://github.com/user-attachments/assets/a1ab40fa-9bfc-423d-b1b4-a47aef9075ba" />
+<img width="1919" height="883" alt="Triage 1" src="https://github.com/user-attachments/assets/72c831f7-f980-4be6-a9a1-32bc62b3aa50" />
 
-<img width="1915" height="879" alt="Triage 4" src="https://github.com/user-attachments/assets/dfe9dc20-b23e-4927-b38c-ebe9a3c7f121" />
+<img width="1915" height="879" alt="Triage 4" src="https://github.com/user-attachments/assets/11c2e42c-34b9-47d3-82d2-a001e6c72165" />
 
-<img width="1918" height="883" alt="Triage 5" src="https://github.com/user-attachments/assets/0827343f-c864-47c9-99ed-5305c825df11" />
+<img width="1918" height="883" alt="Triage 5" src="https://github.com/user-attachments/assets/d958e46d-c87f-45ae-9cb2-db70239277dd" />
 
-<img width="1918" height="953" alt="Triage 3" src="https://github.com/user-attachments/assets/55ba5855-d715-4521-960c-954a4b874ab7" />
+<img width="1918" height="953" alt="Triage 3" src="https://github.com/user-attachments/assets/6be77d12-06d8-40ff-83da-8ecd1270ab1e" />
 
 ## Phase 4 — Resolution Against Live Infrastructure
 
@@ -159,11 +159,11 @@ Configured a domain account lockout policy (Default Domain Policy → Account
 Lockout Policy, threshold: 5 attempts), triggered a real lockout against a 
 domain account, confirmed in Active Directory Users and Computers.
 
-<img width="1022" height="767" alt="accountlockout" src="https://github.com/user-attachments/assets/59d3a0fc-87b6-4bf8-8c01-95b1712f55be" />
+<img width="1022" height="767" alt="accountlockout" src="https://github.com/user-attachments/assets/b8bb1df6-b2a1-4697-a478-95a7034a63ff" />>
 
 Resolved via "Unlock account," verified with a successful login.
 
-<img width="1013" height="768" alt="successfullogin" src="https://github.com/user-attachments/assets/8d815edf-2f64-447f-b989-18407ce5433f" />
+<img width="1013" height="768" alt="successfullogin" src="https://github.com/user-attachments/assets/b6ddad25-add7-49d6-a79f-56a0130c24a2" />
 
 **Print Spooler failure**
 
@@ -173,7 +173,7 @@ Stopped the Print Spooler service, reproducing a genuine Windows error:
 
 Restarted the service via `services.msc`, confirmed print functionality restored.
 
-<img width="802" height="589" alt="printspoolerrunning" src="https://github.com/user-attachments/assets/3630e424-0fca-4d17-be64-2e889ea89655" />
+<img width="802" height="589" alt="printspoolerrunning" src="https://github.com/user-attachments/assets/f4697f7a-9bda-46b1-9168-0dde578b4fb9" />
 
 ## Resolution Notes
 
