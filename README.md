@@ -68,8 +68,6 @@ leaving triage decisions to individual technician judgment.
 - **Triage documentation** on 5 tickets with Tier 1 vs Tier 2 reasoning
 - **3 tickets resolved against real lab infrastructure**
 
-## Folder Structure
-
 ## Phase 1 — Priority Matrix & SLA Policy
 
 Before logging any tickets, a priority matrix and SLA policy were defined to 
