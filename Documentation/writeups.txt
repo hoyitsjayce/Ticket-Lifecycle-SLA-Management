@@ -1,0 +1,24 @@
+#INC-1
+Diagnostic findings: Logged into ADDC01 (domain controller) and verified core AD servicesL NTDS (Active Directory Domain Services), DNS Server, Netlogon, and Kdc (Kerberos Key Distribution Center) through Get-Service. Ran nslookup against the domain (jayce.local) and confirmed correct resolution to the DC's IP (192.168.10.7) ruling out DNS as a cause.
+
+Conclusion: No actual domain controller outage found. All authentication-related services were healthy and DNS resolution was functioning correctly. Likely cause was a client-side issue, local network hiccup, or isolated user error rather than an infrastructure failure.
+
+Resolution: Advised reporting users to retry login. Recommend monitoring for recurrence and if the issue repeats, investigate client-side rather than server side, since server health is confirmed. 
+
+#INC-9
+Diagnostic findings: Confirmed account lockout in Active Directory Users and Computers (ADUC). User's domain account showed "locked out" status under the Account tab.
+
+Resolution: Unlocked the account via ADUC. Verified fix by logging in from the affected endpoint with correct credentials.
+
+Root cause: Repeated failed authentication attempts (likely due to an expired/forgotten password) triggered the domain's account lockout policy.
+
+Preventive note: If this becomes a recurring issue for this user, consider reviewing for a stale cached credential on a mobile device or secondary machine that's repeatedly submitting the old password in background. 
+
+#INC-5
+Diagnostic findings: Investigated reported printer offline issue. Attempted to access printer functions on the affected endpoint and received the error: "Windows can't open Add Printer. The local print spooler service is not running." Confirmed via services that the Print Spooler service was stopped.
+
+Root Cause: Print Spooler service had stopped, which disables all printing functionality system-wide regardless of the printer hardware's status.
+
+Resolution: Restarted the Print Spooler service via Services console. Confirmed printing functionality restored.
+
+Preventive note: If this recurs frequently on the same machine, consider setting the Print Spooler service's recovery options to automatically restart on failure.
