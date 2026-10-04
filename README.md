@@ -162,7 +162,7 @@ Lockout Policy, threshold: 5 attempts)
 
 Triggered a real lockout against a domain account, confirmed in Active Directory Users and Computers.
 
-<img width="1022" height="767" alt="accountlockout" src="https://github.com/user-attachments/assets/b8bb1df6-b2a1-4697-a478-95a7034a63ff" />>
+<img width="1022" height="767" alt="accountlockout" src="https://github.com/user-attachments/assets/b8bb1df6-b2a1-4697-a478-95a7034a63ff" />
 
 Resolved via "Unlock account," verified with a successful login.
 <img width="803" height="591" alt="unlockaccount" src="https://github.com/user-attachments/assets/1327767c-a0eb-4cc1-8889-6b2127e48dc7" />
