@@ -85,7 +85,7 @@ remove guesswork from triage.
 <img width="1918" height="842" alt="Screenshot 2026-08-29 190013" src="https://github.com/user-attachments/assets/21e479a1-f2c4-4d8d-b94f-2a37b619c9f2" />
 
 **Escalation rules:** response escalation fires 30 minutes before the SLA 
-deadline; resolution escalation fires 1 hour before deadline — both route to 
+deadline; resolution escalation fires 1 hour before deadline and both route to 
 Tier 2 Support.
 
 <img width="1919" height="849" alt="Screenshot 2026-08-29 193549" src="https://github.com/user-attachments/assets/cd87f76e-8b1c-4461-949a-42bf9a79f54a" />
