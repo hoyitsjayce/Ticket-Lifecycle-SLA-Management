@@ -180,6 +180,19 @@ Restarted the service via `services.msc`, confirmed print functionality restored
 
 <img width="802" height="589" alt="printspoolerrunning" src="https://github.com/user-attachments/assets/f4697f7a-9bda-46b1-9168-0dde578b4fb9" />
 
+## SLA Report
+
+| Ticket | Priority | SLA Target (Resolve) | Outcome | SLA Status |
+|---|---|---|---|---|
+| #INC-1 | Urgent | 1 hr | Resolved — no outage found | Breached |
+| #INC-9 | High | 8 hrs | Resolved — account unlocked | Breached |
+| #INC-5 | Low | 72 hrs | Resolved — spooler restarted | Breached |
+
+**SLA Breach Rate:** 3 of 3 tracked tickets breached (100%)
+
+**Root cause:** Project work was paused for several days mid-cycle after 
+initial ticket creation. All three tickets were correctly triaged and prioritized before the delay occurred.
+
 ## Resolution Notes
 
 **#INC-1**
