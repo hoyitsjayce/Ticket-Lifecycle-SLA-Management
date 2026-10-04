@@ -17,7 +17,7 @@ of tickets against real Active Directory infrastructure.
 6. Phase 2 — Ticket Queue
 7. Phase 3 — Triage
 8. Phase 4 — Resolution Against Live Infrastructure
-9. Errors & Troubleshooting
+9. Resolution Notes
 10. Key Concepts Demonstrated
 11. Tools & Technologies
 12. Project Status
@@ -125,6 +125,12 @@ documented at the time of the decision:
 
 <img width="1919" height="883" alt="Triage 1" src="https://github.com/user-attachments/assets/a1ab40fa-9bfc-423d-b1b4-a47aef9075ba" />
 
+<img width="1915" height="879" alt="Triage 4" src="https://github.com/user-attachments/assets/dfe9dc20-b23e-4927-b38c-ebe9a3c7f121" />
+
+<img width="1918" height="883" alt="Triage 5" src="https://github.com/user-attachments/assets/0827343f-c864-47c9-99ed-5305c825df11" />
+
+<img width="1918" height="953" alt="Triage 3" src="https://github.com/user-attachments/assets/55ba5855-d715-4521-960c-954a4b874ab7" />
+
 ## Phase 4 — Resolution Against Live Infrastructure
 
 Three tickets were resolved against a real Windows Server Active Directory 
@@ -174,7 +180,7 @@ Restarted the service via `services.msc`, confirmed print functionality restored
 ## Resolution Notes
 
 #INC-1
-Diagnostic findings: Logged into ADDC01 (domain controller) and verified core AD servicesL NTDS (Active Directory Domain Services), DNS Server, Netlogon, and Kdc (Kerberos Key Distribution Center) through Get-Service. Ran nslookup against the domain (jayce.local) and confirmed correct resolution to the DC's IP (192.168.10.7) ruling out DNS as a cause.
+Diagnostic findings: Logged into ADDC01 (domain controller) and verified core AD services NTDS (Active Directory Domain Services), DNS Server, Netlogon, and Kdc (Kerberos Key Distribution Center) through Get-Service. Ran nslookup against the domain (jayce.local) and confirmed correct resolution to the DC's IP (192.168.10.7) ruling out DNS as a cause.
 
 Conclusion: No actual domain controller outage found. All authentication-related services were healthy and DNS resolution was functioning correctly. Likely cause was a client-side issue, local network hiccup, or isolated user error rather than an infrastructure failure.
 
@@ -216,5 +222,4 @@ Services · Group Policy Management · PowerShell
 
 ✅ Complete — Priority matrix, SLA policy, 9-ticket queue, and triage 
 documentation finished in Freshservice. 3 tickets resolved against live AD 
-infrastructure. Platform migration to osTicket in progress for continued, 
-trial-independent lab work.
+infrastructure.
