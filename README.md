@@ -49,8 +49,6 @@ leaving triage decisions to individual technician judgment.
    ↓
 6. Ticket resolved, documented, closed
 
-<img width="452" height="168" alt="priority matrix" src="https://github.com/user-attachments/assets/b0269c73-9444-4013-9088-8b0fcb711ae0" />
-
 **Key terms:**
 
 | Term | Meaning |
