@@ -134,7 +134,7 @@ documented at the time of the decision:
 Three tickets were resolved against a real Windows Server Active Directory 
 domain controller (ADDC01) rather than closed with a placeholder note.
 
-**INC-1 "Domain controller unreachable, no one can log in**
+**INC-1 "Domain controller unreachable, no one can log in (Domain Controller Health Check)**
 
 ```powershell
 Get-Service NTDS, DNS, Netlogon, Kdc
@@ -153,7 +153,7 @@ nslookup jayce.local
 No actual outage. Diagnostics ruled out server-side failure, pointing to a 
 transient client-side issue instead.
 
-**Account lockout**
+**INC-9 "Multi-factor authentication not sending codes, user locked out of all systems. (Account lockout)**
 
 Configured a domain account lockout policy (Default Domain Policy → Account 
 Lockout Policy, threshold: 5 attempts)
@@ -170,7 +170,7 @@ Resolved via "Unlock account," verified with a successful login.
 Confirmed Successful Login
 <img width="1013" height="768" alt="successfullogin" src="https://github.com/user-attachments/assets/b6ddad25-add7-49d6-a79f-56a0130c24a2" />
 
-**Print Spooler failure**
+**Inc-5 "Printer offline in accounting (Print Spooler failure)**
 
 Stopped the Print Spooler service, reproducing a genuine Windows error:
 
@@ -182,14 +182,14 @@ Restarted the service via `services.msc`, confirmed print functionality restored
 
 ## Resolution Notes
 
-#INC-1
+**#INC-1**
 Diagnostic findings: Logged into ADDC01 (domain controller) and verified core AD services NTDS (Active Directory Domain Services), DNS Server, Netlogon, and Kdc (Kerberos Key Distribution Center) through Get-Service. Ran nslookup against the domain (jayce.local) and confirmed correct resolution to the DC's IP (192.168.10.7) ruling out DNS as a cause.
 
 Conclusion: No actual domain controller outage found. All authentication-related services were healthy and DNS resolution was functioning correctly. Likely cause was a client-side issue, local network hiccup, or isolated user error rather than an infrastructure failure.
 
 Resolution: Advised reporting users to retry login. Recommend monitoring for recurrence and if the issue repeats, investigate client-side rather than server side, since server health is confirmed. 
 
-#INC-9
+**#INC-9**
 Diagnostic findings: Confirmed account lockout in Active Directory Users and Computers (ADUC). User's domain account showed "locked out" status under the Account tab.
 
 Resolution: Unlocked the account via ADUC. Verified fix by logging in from the affected endpoint with correct credentials.
@@ -198,7 +198,7 @@ Root cause: Repeated failed authentication attempts (likely due to an expired/fo
 
 Preventive note: If this becomes a recurring issue for this user, consider reviewing for a stale cached credential on a mobile device or secondary machine that's repeatedly submitting the old password in background. 
 
-#INC-5
+**#INC-5**
 Diagnostic findings: Investigated reported printer offline issue. Attempted to access printer functions on the affected endpoint and received the error: "Windows can't open Add Printer. The local print spooler service is not running." Confirmed via services that the Print Spooler service was stopped.
 
 Root Cause: Print Spooler service had stopped, which disables all printing functionality system-wide regardless of the printer hardware's status.
