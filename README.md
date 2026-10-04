@@ -25,8 +25,7 @@ of tickets against real Active Directory infrastructure.
 ## Project Overview
 
 The goal of this project was to simulate what it looks like when an IT help 
-desk enforces consistent prior<img width="452" height="168" alt="priority matrix" src="https://github.com/user-attachments/assets/96cffbbc-e08d-4f23-81e2-2540e066a816" />
-itization and escalation standards, rather than 
+desk enforces consistent prioritization and escalation standards, rather than 
 leaving triage decisions to individual technician judgment.
 
 | Component | Detail |
