@@ -73,8 +73,7 @@ leaving triage decisions to individual technician judgment.
 Before logging any tickets, a priority matrix and SLA policy were defined to 
 remove guesswork from triage.
 
-<img width="452" height="168" alt="priority matrix" src="https://github.com/user-attachments/assets/548d0c56-3615-4d7b-97bc-bd6470acdbb4" />
-
+<img width="452" height="168" alt="output-onlinepngtools" src="https://github.com/user-attachments/assets/0d4b0d09-1492-4b63-b9dc-2a79d228cd26" />
 
 **SLA targets configured:**
 
