@@ -134,7 +134,7 @@ documented at the time of the decision:
 Three tickets were resolved against a real Windows Server Active Directory 
 domain controller (ADDC01) rather than closed with a placeholder note.
 
-**Domain controller health check**
+**INC-1 "Domain controller unreachable, no one can log in**
 
 ```powershell
 Get-Service NTDS, DNS, Netlogon, Kdc
@@ -149,20 +149,25 @@ nslookup jayce.local
 
 <img width="1021" height="684" alt="nslookup" src="https://github.com/user-attachments/assets/a797efa3-2b17-4d45-a9bf-9ffe1d3d292b" />
 
-**Conclusion:** all four services confirmed Running, DNS resolved correctly — 
-no actual outage. Diagnostics ruled out server-side failure, pointing to a 
+**Conclusion:** all four services confirmed Running, DNS resolved correctly. 
+No actual outage. Diagnostics ruled out server-side failure, pointing to a 
 transient client-side issue instead.
 
 **Account lockout**
 
 Configured a domain account lockout policy (Default Domain Policy → Account 
-Lockout Policy, threshold: 5 attempts), triggered a real lockout against a 
-domain account, confirmed in Active Directory Users and Computers.
+Lockout Policy, threshold: 5 attempts)
+
+<img width="1021" height="680" alt="grouppolicy" src="https://github.com/user-attachments/assets/16062ab8-6407-4711-8be3-41c215bdbdd0" />
+
+Triggered a real lockout against a domain account, confirmed in Active Directory Users and Computers.
 
 <img width="1022" height="767" alt="accountlockout" src="https://github.com/user-attachments/assets/b8bb1df6-b2a1-4697-a478-95a7034a63ff" />>
 
 Resolved via "Unlock account," verified with a successful login.
+<img width="803" height="591" alt="unlockaccount" src="https://github.com/user-attachments/assets/1327767c-a0eb-4cc1-8889-6b2127e48dc7" />
 
+Confirmed Successful Login
 <img width="1013" height="768" alt="successfullogin" src="https://github.com/user-attachments/assets/b6ddad25-add7-49d6-a79f-56a0130c24a2" />
 
 **Print Spooler failure**
