@@ -93,8 +93,7 @@ Tier 2 Support.
 
 ## Phase 2 — Ticket Queue
 
-9 tickets were logged, each assigned priority via the matrix above rather than 
-by guesswork:
+9 tickets were logged, each assigned priority via the matrix above:
 
 <img width="1917" height="848" alt="Screenshot 2026-08-29 202954" src="https://github.com/user-attachments/assets/c8b463e0-6550-4df4-b865-dcae27733d0a" />
 
