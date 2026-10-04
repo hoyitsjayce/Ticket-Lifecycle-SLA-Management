@@ -134,7 +134,7 @@ documented at the time of the decision:
 Three tickets were resolved against a real Windows Server Active Directory 
 domain controller (ADDC01) rather than closed with a placeholder note.
 
-**INC-1 "Domain controller unreachable, no one can log in (Domain Controller Health Check)**
+**INC-1 "Domain controller unreachable, no one can log in" (Domain Controller Health Check)**
 
 ```powershell
 Get-Service NTDS, DNS, Netlogon, Kdc
@@ -153,7 +153,7 @@ nslookup jayce.local
 No actual outage. Diagnostics ruled out server-side failure, pointing to a 
 transient client-side issue instead.
 
-**INC-9 "Multi-factor authentication not sending codes, user locked out of all systems. (Account lockout)**
+**INC-9 "Multi-factor authentication not sending codes, user locked out of all systems." (Account lockout)**
 
 Configured a domain account lockout policy (Default Domain Policy → Account 
 Lockout Policy, threshold: 5 attempts)
@@ -170,7 +170,7 @@ Resolved via "Unlock account," verified with a successful login.
 Confirmed Successful Login
 <img width="1013" height="768" alt="successfullogin" src="https://github.com/user-attachments/assets/b6ddad25-add7-49d6-a79f-56a0130c24a2" />
 
-**Inc-5 "Printer offline in accounting (Print Spooler failure)**
+**Inc-5 "Printer offline in accounting" (Print Spooler failure)**
 
 Stopped the Print Spooler service, reproducing a genuine Windows error:
 
