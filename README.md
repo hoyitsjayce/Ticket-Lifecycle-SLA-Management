@@ -183,7 +183,7 @@ Restarted the service via `services.msc`, confirmed print functionality restored
 
 | Ticket | Priority | SLA Target (Resolve) | Outcome | SLA Status |
 |---|---|---|---|---|
-| #INC-1 | Urgent | 1 hr | Resolved — no outage found | Breached |
+| #INC-1 | Urgent | 4 hr | Resolved — no outage found | Breached |
 | #INC-9 | High | 8 hrs | Resolved — account unlocked | Breached |
 | #INC-5 | Low | 72 hrs | Resolved — spooler restarted | Breached |
 
